@@ -8,13 +8,12 @@ export default class App extends React.Component {
   constructor(props) {
     super(props)
     
-    this.findMyIp = this.findMyIp.bind(this);
-   
+  
     this.state = {
       data: ''
     }
   }
-  async findMyIp() {
+    findMyIp = async () => {
     this.setState({
       data: 'Descobrindo IP...'
     })
